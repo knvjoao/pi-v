@@ -1,4 +1,4 @@
 # ecommerce-traning
-### Projeto para fins didáticos
+### Projeto integrador V
 
-- Incompleto para ser utilizado na explicação de function based views em sala de aula
+Projeto clonado de own4rd/ecommerce-traning. As alterações no código foram feitas com o intuito de testar funcionalidades do site, editando os arquivos tests.py, e implementar algumas melhorias em modelos e views.
