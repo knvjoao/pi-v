@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <div id="produtos-destaque" class="container pb-5">
+
+        {% if query %}
+            <h3>Resultados para "{{ query }}"</h3>
+        {% else %}
+            <h3>Buscar Produtos</h3>
+        {% endif %}
+        
+        <hr>
+        <div class="row">
+            {% for produto in produtos %}
+                <div class="col-md-3">
+                    {% include 'partials/produto/card_produto.html' %}
+                </div>
+            {% empty %}
+                <p>Nenhum produto encontrado.</p>
+            {% endfor %}
+        </div>
+        
+    </div>
+
+{% endblock %}

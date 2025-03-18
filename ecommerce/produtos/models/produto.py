@@ -1,4 +1,5 @@
 from django.db import models
+from decimal import Decimal
 
 from produtos.models.categoria import Categoria
 
@@ -14,5 +15,5 @@ class Produto(models.Model):
         return self.nome
     
     def discounted_price(self):
-        discounted = self.preco - (self.preco * (self.discount / 100))
+        discounted = self.preco - (self.preco * (Decimal(self.discount) / Decimal(100)))      # Alteração foi feita nesta operação
         return round(discounted, 2)

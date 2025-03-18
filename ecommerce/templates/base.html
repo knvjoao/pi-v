@@ -20,8 +20,8 @@
                     Loja Ecommerce
                 </a>
                 <div class="col-md-5 text-end">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Camisa, Televisão, ..."
+                    <form class="d-flex" role="search" method="get" action="{% url 'buscar' %}">
+                        <input class="form-control me-2" type="search" placeholder="Camisa, Televisão, ..." name= "pesquisa"
                             aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
@@ -50,28 +50,28 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">para sua empresa</a>
+                                <a class="nav-link" href="{% url 'para_sua_empresa' %}">para sua empresa</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">baixe o app</a>
+                                <a class="nav-link" href="{% url 'baixe_o_app' %}">baixe o app</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">receba hoje</a>
+                                <a class="nav-link" href="{% url 'receba_hoje' %}">receba hoje</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">cartão de credito eco</a>
+                                <a class="nav-link" href="{% url 'cartao_de_credito' %}">cartão de credito eco</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">marcas próprias</a>
+                                <a class="nav-link" href="{% url 'marcas_proprias' %}">marcas proprias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">produtos internacionais</a>
+                                <a class="nav-link" href="{% url 'produtos_internacionais' %}">produtos internacionais</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">venda na ecommerce</a>
+                                <a class="nav-link" href="{% url 'venda_na_ecommerce' %}">venda na ecommerce</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Oferta</a>
+                                <a class="nav-link" href="{% url 'oferta' %}">Oferta</a>
                             </li>
                         </ul>
                     </div>
@@ -94,28 +94,6 @@
 
             <div class="col mb-3">
 
-            </div>
-
-            <div class="col mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
-            </div>
-
-            <div class="col mb-3">
-                <h5>Section</h5>
-                <ul class="nav flex-column">
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                </ul>
             </div>
 
             <div class="col mb-3">
